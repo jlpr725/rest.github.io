@@ -38,13 +38,13 @@ h1, h2, h3 { color: #d32f2f; }
     animation: levitar 3s infinite ease-in-out alternate;
 }
 .hero::before {
-    background-image: url('https://source.unsplash.com/150x150/?burger');
+    background-image: url('https://png.pngtree.com/png-clipart/20230427/original/pngtree-food-burger-sauce-png-image_9113991.png');
     top: 20%;
     left: 10%;
     animation-delay: 0s;
 }
 .hero::after {
-    background-image: url('https://source.unsplash.com/150x150/?cheeseburger');
+    background-image: url('https://png.pngtree.com/png-clipart/20230427/original/pngtree-food-burger-sauce-png-image_9113991.png');
     top: 30%;
     right: 10%;
     animation-delay: 1.5s;
