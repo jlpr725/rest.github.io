@@ -22,7 +22,7 @@ h1, h2, h3 { color: #d32f2f; }
 /* Hero con animación */
 .hero {
     position: relative;
-    background: url('https://source.unsplash.com/1600x900/?grill') center/cover;
+    background: url('https://i.pinimg.com/736x/2c/e4/4e/2ce44e1967638d2c953b40545cac2d77.jpg') center/cover;
     color: white;
     padding: 100px 20px;
     overflow: hidden;
