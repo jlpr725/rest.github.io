@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+h1, h2, h3 { color: #d32f2f; }
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #d32f2f;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.btn:hover { background: #b71c1c; }
+
+/* Hero con animación */
+.hero {
+    position: relative;
+    background: url('https://source.unsplash.com/1600x900/?grill') center/cover;
+    color: white;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+/* Hamburguesas levitando */
+.hero::before, .hero::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    animation: levitar 3s infinite ease-in-out alternate;
+}
+.hero::before {
+    background-image: url('https://source.unsplash.com/150x150/?burger');
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+.hero::after {
+    background-image: url('https://source.unsplash.com/150x150/?cheeseburger');
+    top: 30%;
+    right: 10%;
+    animation-delay: 1.5s;
+}
+
+/* Animación de levitación */
+@keyframes levitar {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
+
+/* Productos */
+.productos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.producto img { width: 100%; border-radius: 8px; }
+.beneficios-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.beneficio {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.testimonios { background: #ffeb3b; padding: 40px 20px; }
+.cta { background: #d32f2f; color: white; padding: 40px 20px; }
+footer { background: #333; color: white; padding: 20px; }
